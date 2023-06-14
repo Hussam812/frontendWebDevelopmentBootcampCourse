@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Page</title>
+    <style>
+       button{
+         background-color: transparent;
+         border: 1px solid navy;
+         padding: 20px;
+         font-size: 1.4rem;
+       }
+       button:hover{
+        background-color: navy;
+        border: none;
+        color: white;
+       }
+    </style>
+</head>
+<body>
+    <button>CLICK ME</button>
+    <div class="container"></div>\
+    <script>
+        function onclickEvent(){
+            const e1 = document.createElement('p');
+            e1.innerHTML = "clicked the button";
+            document.querySelector(".container").appendChild(e1);
+        }
+        document.querySelector('button').onclick = onclickEvent;
+    </script>
+</body>
+</html>
